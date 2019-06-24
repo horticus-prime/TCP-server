@@ -24,14 +24,9 @@
   "homepage": "https://github.com/horticus-prime/TCP-server#readme",
   "dependencies": {
     "eslint": "^6.0.0",
-    "express": "^4.17.1",
-    "express-swagger-generator": "^1.1.15",
     "jest": "^24.8.0",
     "jsdoc": "^3.6.2",
-    "jsdocs": "^1.0.0",
-    "mongoose": "^5.6.0",
     "socket.io": "^2.2.0",
-    "socket.io-client": "^2.2.0",
-    "superagent": "^5.1.0"
+    "swagger": "^0.7.5"
   }
 }
