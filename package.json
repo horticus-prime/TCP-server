@@ -1,0 +1,33 @@
+{
+  "name": "tcp-server",
+  "version": "1.0.0",
+  "description": "The back-end TCP server for the project",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "lint": "eslint \"**/*.js\"",
+    "test-watch": "jest --watchAll",
+    "test": "jest --verbose --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/horticus-prime/TCP-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/horticus-prime/TCP-server/issues"
+  },
+  "homepage": "https://github.com/horticus-prime/TCP-server#readme",
+  "dependencies": {
+    "eslint": "^6.0.0",
+    "jest": "^24.8.0",
+    "jsdoc": "^3.6.2",
+    "jsdocs": "^1.0.0",
+    "socket.io": "^2.2.0",
+    "socket.io-client": "^2.2.0"
+  }
+}
