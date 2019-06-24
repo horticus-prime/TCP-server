@@ -63,8 +63,6 @@ Mr. Gardener wants to keep Mrs. Gardener from yelling at him for overwatering an
 #### MVP 2
 Get sensors talking to Raspberry PI
 
-#### MVP X
+#### MVP Xs
 
-### UML
-
-![UML](https://drive.google.com/open?id=1Y67YQgQqTLNncwPR3hFqmXAM92oxdTC4)
+[UML](https://drive.google.com/open?id=1Y67YQgQqTLNncwPR3hFqmXAM92oxdTC4)
