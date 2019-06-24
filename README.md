@@ -1,2 +1,2 @@
-# backend
-The backend for the project
+# TCP-server
+The back-end TCP server for the project
