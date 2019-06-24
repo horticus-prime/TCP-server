@@ -51,6 +51,8 @@ VSCode, Trello, Github, git, Node.js, Express, Raspberry Pi, a Grove Moisture Se
 Mr. Gardener wants to keep Mrs. Gardener from yelling at him for overwatering and underwatering their plants. They have asked Horticus-Prime to create a method to monitor soil moisture and give them access to the data via the internet.
 
 ### Licensing/Attribution
+
+
 #### MVP1
 * Group Title
 * Back-end/database/API design
@@ -62,3 +64,7 @@ Mr. Gardener wants to keep Mrs. Gardener from yelling at him for overwatering an
 Get sensors talking to Raspberry PI
 
 #### MVP X
+
+### UML
+
+![UML](https://drive.google.com/open?id=1Y67YQgQqTLNncwPR3hFqmXAM92oxdTC4)
