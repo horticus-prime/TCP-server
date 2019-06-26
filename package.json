@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/horticus-prime/TCP-server#readme",
   "dependencies": {
-    "dotenv": "^8.0.0",
     "eslint": "^6.0.0",
     "jest": "^24.8.0",
     "jsdoc": "^3.6.2",
