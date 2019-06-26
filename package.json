@@ -2,7 +2,7 @@
   "name": "tcp-server",
   "version": "1.0.0",
   "description": "The back-end TCP server for the project",
-  "main": "index.js",
+  "main": "server.js",
   "directories": {
     "doc": "docs"
   },
