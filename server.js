@@ -1,6 +1,6 @@
 'use strict';
 
-const io = require('socket.io')(3333);
+const io = require('socket.io')(3007);
 
 io.on('connection', socket => {
   console.log(`Connection from: ${socket.id}`);
