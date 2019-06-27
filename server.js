@@ -17,9 +17,3 @@ io.on('connection', socket => {
     io.emit('save-status', payload);
   });
 });
-
-// let helloWorld = () => {
-//   console.log('Hello World');
-// };
-
-// helloWorld();
