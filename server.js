@@ -10,6 +10,7 @@ io.on('connection', socket => {
   console.log(`Connection from: ${socket.id}`);
 
   socket.on('moisture-data', payload => {
+    console.log(typeof payload);
     let newPayload = JSON.parse(payload);
     console.log('PAYLOAD: ', JSON.parse(payload));
     console.log(newPayload.category);
