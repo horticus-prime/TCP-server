@@ -11,7 +11,7 @@ io.on('connection', socket => {
 
   socket.on('moisture-data', payload => {
     let newPayload = JSON.parse(payload);
-    console.log('PAYLOAD: ', JSON.stringify(payload));
+    console.log('PAYLOAD: ', JSON.parse(payload));
     console.log(newPayload.category);
     console.log(newPayload.val);
     let dataObj = {
