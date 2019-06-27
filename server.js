@@ -14,8 +14,8 @@ io.on('connection', socket => {
 
     let dataObj = {
       timestamp: new Date(),
-      moistureCategory: payload.result,
-      moistureNumber: payload.m,
+      moistureCategory: payload.category,
+      moistureNumber: payload.val,
     };
 
     io.emit('moisture-data', dataObj);
