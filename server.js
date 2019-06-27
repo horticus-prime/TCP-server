@@ -11,11 +11,12 @@ io.on('connection', socket => {
 
   socket.on('moisture-data', payload => {
     console.log('PAYLOAD: ', payload);
-
+    console.log(payload.category);
+    console.log(payload.val);
     let dataObj = {
       timestamp: new Date(),
       moistureCategory: payload.category,
-      moistureNumber: payload.val,
+      moistureNumber: Number(payload.val),
     };
 
     io.emit('moisture-data', dataObj);
