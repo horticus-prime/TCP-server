@@ -13,12 +13,12 @@ io.on('connection', socket => {
     console.log(typeof payload);
     let newPayload = JSON.parse(payload);
     console.log('PAYLOAD: ', JSON.parse(payload));
-    console.log(newPayload[0]);
-    console.log(newPayload[1]);
+    console.log(newPayload);
+    console.log(newPayload.val);
     let dataObj = {
       timestamp: new Date(),
-      moistureCategory: newPayload[0],
-      moistureNumber: Number(newPayload[1]),
+      moistureCategory: newPayload.category,
+      moistureNumber: Number(newPayload.val),
     };
 
     io.emit('moisture-data', dataObj);
