@@ -10,7 +10,7 @@ io.on('connection', socket => {
   console.log(`Connection from: ${socket.id}`);
 
   socket.on('moisture-data', payload => {
-    let newPayload = JSON.stringify(payload);
+    let newPayload = JSON.parse(payload);
     console.log('PAYLOAD: ', JSON.stringify(payload));
     console.log(newPayload.category);
     console.log(newPayload.val);
