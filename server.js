@@ -1,6 +1,10 @@
 'use strict';
 
-const io = require('socket.io')(3030);
+var app = require('express')();
+var server = require('http').Server(app);
+const io = require('socket.io')(server);
+
+server.listen(process.env.PORT);
 
 io.on('connection', socket => {
   console.log(`Connection from: ${socket.id}`);
