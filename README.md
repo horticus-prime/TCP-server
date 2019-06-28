@@ -65,4 +65,4 @@ Get sensors talking to Raspberry PI
 
 #### MVP Xs
 
-[UML](https://drive.google.com/drive/folders/1P663f6bxMko65qCKzeeDDBVXHu3SnLYB)
+[UML](https://drive.google.com/file/d/1JYgqUlcAcH02hDLjZn9CXUeOktX3hPKf/view?usp=sharing)
