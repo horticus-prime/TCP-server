@@ -3,4 +3,6 @@
 **/*.min.js
 **/coverage/*
 **/build/*
-docs/scripts/*
+**/lang-css.js
+**/prettify.js
+**/docs/*
