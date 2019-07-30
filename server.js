@@ -2,12 +2,13 @@
 
 let cron = require('node-cron');
 
+// DEPLOY STUFF:
 // var app = require('express')();
 // var server = require('http').Server(app);
 // const io = require('socket.io')(server);
-const io = require('socket.io')(3006);
-
 // server.listen(process.env.PORT);
+
+const io = require('socket.io')(3006);
 
 let arr = [];
 
@@ -18,22 +19,16 @@ io.on('connection', socket => {
   socket.on('moisture-data', payload => {
     let newPayload = JSON.parse(payload);
     arr.push(newPayload);
-    
-    let dataObj = {
-      timestamp: new Date(),
-      moistureCategory: newPayload.category,
-      moistureNumber: Number(newPayload.val),
-    };
 
-    io.emit('moisture-data', dataObj);
+    io.emit('moisture-data', payload);
   });
 
   // database data
-  cron.schedule('*/1 * * * *', function() {
-    console.log('array', arr);
-    io.emit('database-data', arr[arr.length-1]);
-    arr = [];
-  });
+  // cron.schedule('*/1 * * * *', function() {
+  //   console.log('array', arr);
+  //   io.emit('database-data', arr[arr.length-1]);
+  //   arr = [];
+  // });
 
   socket.on('req-data', payload => {
     io.emit('req-data', payload);
